@@ -1,3 +1,3 @@
 FLASH ME FIRST!
-This sketch just flashes the title text to take advantage of the 128b of eeprom.
+This sketch just flashes the title text to take advantage of the 128b of eeprom in the attiny 402.
 After flashing this flash the game.
