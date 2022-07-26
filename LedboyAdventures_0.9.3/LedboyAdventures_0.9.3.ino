@@ -60,7 +60,7 @@ void setup() {
   takeOverTCA0();                               // this replaces disabling and resettng the timer, required previously.
   TCA0.SINGLE.CTRLB = (TCA_SINGLE_CMP0EN_bm | TCA_SINGLE_WGMODE_SINGLESLOPE_gc); // Single slope PWM mode, PWM on WO0
   TCA0.SINGLE.PER   = 255;                   // Count all the way up to (255) - 8-bit PWM. At 5MHz, this gives ~19.607kHz PWM
-  TCA0.SINGLE.CMP0  = 115; // 45% duty cycle
+  TCA0.SINGLE.CMP0  = 10; // 4% duty cycle 3.8v aprox
   TCA0.SINGLE.CTRLA = TCA_SINGLE_ENABLE_bm; // enable the timer with no prescaler
 
   sei(); // enable interrupts
